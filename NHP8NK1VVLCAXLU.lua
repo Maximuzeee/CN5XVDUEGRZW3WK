@@ -1375,4 +1375,5 @@ sleep(1500)
 setBool("Auto Reconnect", false)
 disconnect()
 sleep(3600000)
+SUPP_RECONNECTION(Values["FARM_CONFIG"].FARM_WORLD[1], Values["FARM_CONFIG"].FARM_WORLD_ID, "START ROTATE AUTO FARM")
 goto BACKWORK
