@@ -483,6 +483,9 @@ end
                     removeBot(Values["BOT_CONFIG"].BOTNAME)
                     Values["BOOLEAN"].REMOVE_STATUS = true
                     break
+		elseif getBot().status == "maintenance" then
+			disconnect()
+			sleep(5000)
                 elseif getBot().status == "online" then
                     nWebHook_Disconnect(MESSAGEZ)
                     sleep(500)
@@ -1375,5 +1378,5 @@ sleep(1500)
 setBool("Auto Reconnect", false)
 disconnect()
 sleep(3600000)
-SUPP_RECONNECTION(Values["FARM_CONFIG"].FARM_WORLD[1], Values["FARM_CONFIG"].FARM_WORLD_ID, "START ROTATE AUTO FARM")
+SUPP_RECONNECTION(Values["FARM_CONFIG"].FARM_WORLD[1], Values["FARM_CONFIG"].FARM_WORLD_ID, "RECONNECTION AFTER REST BREAK")
 goto BACKWORK
