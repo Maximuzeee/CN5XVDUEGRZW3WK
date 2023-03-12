@@ -1,4 +1,3 @@
--- == BATAS SUCI SCRIPT ==
 Values = {}
 PERMAINDEX = 0
 -- WEBHOOK
